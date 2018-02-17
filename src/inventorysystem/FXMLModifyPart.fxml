@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="sceneModifyPart3" prefHeight="395.0" prefWidth="440.0" style="-fx-background-color: D8D8D8;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorysystem.FXMLController">
+   <children>
+      <Label layoutX="24.0" layoutY="24.0" prefHeight="27.0" prefWidth="150.0" text="Modify Part">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioInHouse3" layoutX="185.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleInHouseRadio3" prefHeight="20.0" prefWidth="89.0" text="In-House">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="groupSource3" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioOutsourced3" layoutX="293.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleOutsourcedRadio3" prefHeight="20.0" prefWidth="116.0" text="Outsourced" toggleGroup="$groupSource3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="66.0" layoutY="82.0" prefHeight="20.0" prefWidth="105.0" text="ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="127.0" prefHeight="20.0" prefWidth="105.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="172.0" prefHeight="20.0" prefWidth="105.0" text="Inv">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="217.0" prefHeight="20.0" prefWidth="105.0" text="Price">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="262.0" prefHeight="20.0" prefWidth="105.0" text="Max">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="262.0" prefHeight="20.0" prefWidth="105.0" text="Min">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCompanyNameMachineID3" layoutX="66.0" layoutY="307.0" prefHeight="20.0" prefWidth="105.0" text="Company Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldID3" layoutX="183.0" layoutY="77.0" prefHeight="30.0" prefWidth="150.0" promptText="ID" />
+      <TextField fx:id="fieldName3" layoutX="183.0" layoutY="122.0" prefHeight="30.0" prefWidth="150.0" promptText="Name" />
+      <TextField fx:id="fieldInventory3" layoutX="183.0" layoutY="167.0" prefHeight="30.0" prefWidth="150.0" promptText="Inventory #" />
+      <TextField fx:id="fieldPrice3" layoutX="183.0" layoutY="212.0" prefHeight="30.0" prefWidth="150.0" promptText="Price" />
+      <TextField fx:id="fieldMax3" layoutX="183.0" layoutY="257.0" prefHeight="30.0" prefWidth="75.0" promptText="Max" />
+      <TextField fx:id="fieldMin3" layoutX="336.0" layoutY="257.0" prefHeight="30.0" prefWidth="75.0" promptText="Min" />
+      <TextField fx:id="fieldCompanyNameMachineID3" layoutX="183.0" layoutY="302.0" prefHeight="30.0" prefWidth="150.0" promptText="Company Name" />
+      <Button fx:id="buttonSavePart3" layoutX="227.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleSaveModifyPartButton3" prefHeight="30.0" prefWidth="89.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonNavCancel3" layoutX="326.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleNavCancelButton3" prefHeight="30.0" prefWidth="89.0" text="Cancel">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
